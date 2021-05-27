@@ -1,0 +1,75 @@
+<main class="container rounded mt-3 p-3">
+    <div class="ribbon p-2 mb-3 rounded-top d-flex justify-content-between">
+    <div class="nav-name">Product Form </div>
+    </div>
+    <form>
+    <div class="row">
+    <div class="col-md-4">
+    <div class="form-group">
+    <label for="training">Product Name</label>
+    <input type="text" class="form-control">
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label for="training">Product Desc</label>
+    <input type="text" class="form-control">
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label for="training">Product Image</label>
+    <input type="file" class="form-control">
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label for="training">Product Price</label>
+    <input type="text" class="form-control">
+    </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+        <label for="training">Product Quantity</label>
+        <input type="text" class="form-control">
+        </div>
+        </div>
+    </div> 
+    </form>
+    <div class="text-center mt-4">
+        <button class="btn btn-primary btn-sm mr-2">Submit </button>  <button class="btn btn-primary btn-sm">Reset</button> <button class="btn btn-primary btn-sm">Close</button>
+        </div>
+
+    
+    
+    <div class="table-responsive mt-4">
+    <table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Desc</th>
+    <th>Product Image</th>
+    <th>Product Price</th>
+    <th>Product Quantity</th>
+    <th>Status</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let list of allData">
+    <td>{{list.productId}}</td>
+    <td>{{list.productName}}</td>
+    <td>{{list.productDesc}}</td>
+    <td><img [src]="list.productImagePath" class="imgSize" /></td>
+    <td>{{list.productPrice}}</td>
+    <td>{{list.productQuantity}}</td>
+    <td>{{list.status}}</td>
+    <td><a href="#" class="mr-2"><i class="fa fa-edit"></i></a> <a href="#"><i class="fa fa-trash"></i></a></td>
+    </tr>
+    
+    </tbody>
+    </table>
+    </div>
+    
+    </main>

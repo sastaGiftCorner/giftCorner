@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row" >
+    <div class="col-md-3" *ngFor="let d of allData">
+    <div class="productWrap">
+    <div class="prodImg">
+        <img [src]="d.productImagePath" />
+    </div>
+    <div class="prodContent">
+    <div class="title">{{d.productName}}</div>
+    <div class="prodPrice">{{d.productPrice}}</div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    
