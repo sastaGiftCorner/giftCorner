@@ -10,7 +10,9 @@ import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard
 import { HttpClientModule } from '@angular/common/http';
 import { ToysComponent } from './pages/toys/toys.component';
 import { BirthDayComponent } from './pages/birth-day/birth-day.component';
-import { Header1Component } from './layout/header1/header1.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+
+
 
 @NgModule({
   declarations: [
@@ -20,13 +22,13 @@ import { Header1Component } from './layout/header1/header1.component';
     HomeComponent,
     AdminDashboardComponent,
     ToysComponent,
-    BirthDayComponent,
-    Header1Component
+    BirthDayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

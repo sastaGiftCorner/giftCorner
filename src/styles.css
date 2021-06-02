@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "./assets/css/font-awesome.css";
-body{background-color: #EAEDED; font-size: 14px;font-family: 'Open Sans', sans-serif; }
+body{background-color: #fff; font-size: 14px;font-family: 'Open Sans', sans-serif; }
 a{text-decoration: none;}
 a{color: #333; text-decoration: none;}
 a:hover, a:active, a:focus{color: #8c000d !important;}
@@ -138,7 +138,7 @@ footer a{color: #5a5655;}
 input[type="date"]{min-width: 160px;}
 .form-control{padding: 0.375rem;}
 .fa-play-circle-o{top: 0; left: 0; right: 0; margin: auto; bottom: 0; display: block; z-index: 9; height: 55px; width: 55px; font-size: 55px; color: #e2001a;}
-/*home Page CSS*/ /* .logo img{height: 31px;} */
+.logo img{width:300px;} 
 .search .fa-search{top: 4px; right: 5px; color: #b2b2b2;}
 .user-profile{margin-left: 1rem;}
 .user-profile img{width: 35px; height: 35px;}
@@ -146,7 +146,7 @@ input[type="date"]{min-width: 160px;}
 .user-profile .dropdown-menu i.fa{margin-right: 5px;}
 .user-profile .dropdown-toggle::after{color: #e2001a;}
 .bg-dark{background-color:#fff !important;}
-header{background: #007eac; color:#fff;}
+header{background:#f2f2f2; color:#fff;}
 .navbar-dark{padding: 0;}
 .form-group{margin-bottom:10px;}
 .btn{margin-right: 10px;}
@@ -593,6 +593,7 @@ span.modifiedByCss{font-size: 12px; font-weight: normal; color: #999;}
 .prodContent .title{font-size: 18px; margin: 10px 0;}
 .productWrap{background: #f1f1f1; box-shadow: 0 2px 10px #ccc; margin-bottom: 10px; margin: 20px 0;} 
 .prodContent{padding: 10px;}
+#carouselExampleControls .carousel-item img{max-height: 300px;}
 @media (min-width: 1200px){
 .container{max-width: 1300px;}
 }
@@ -662,13 +663,13 @@ table.dataTable thead .sorting{background-size: 10px;}
 
 /*---------------footer css start-----------------*/
 footer{font-size:14px; margin-top:25px !important;}
-footer .ft-exp a, #footer-stories{color:#8a8787;}
+footer .ft-exp a, #footer-stories{color:#fff;}
 #footer-stories{padding:20px 0 30px 0;}
-footer .ftLink{border-top:2px solid #007eac; padding-top:20px !important;}
+footer .ftLink{border-top:2px solid #f2f2f2; padding-top:20px !important;}
 footer .ft-exp li:first-child{font-weight:600; font-size:16px; margin-bottom:10px; margin-top:35px;}
 footer .ft-exp li:first-child a{color:#fff; min-height: 30px; display: block;}
 footer .ft-exp li:first-child a:hover{color:#fff;}
-footer > .container-fluid, #home footer .container-fluid{background:#000 !important}
+footer > .container-fluid, #home footer .container-fluid{background:#3D4C6F !important}
 footer .ft-top a{color:#999999 !important;}
 footer ul.list-inline>li:after{color:#999999 !important;}
 footer ul.list-inline>li.social-icon{padding: 0;}
@@ -678,7 +679,9 @@ footer .si-facebook{background-color: #537abd}
 footer .si-youtube{background-color: #dc4747}
 footer .si-linkedin{background-color: #1384c8}
 footer .si-twitter{background-color: #77cbef}
-
+footer .foot_row .list-group-item{border:none;}
 footer .foot_row .list-group-item{background-color: transparent; padding: 2px 10px;}
 footer .foot_row .list-group-item:first-child a{font-weight: bold;}
+footer .foot_row .list-group-item:first-child a:hover{color:#fff !important;}
+footer .foot_row .list-group-item a:hover{color:#fff !important; text-decoration: underline;}
 footer .ft-exp ul li a:hover, footer .ft-exp ul li a:active, footer .ft-exp ul li a:focus{color: #333;}

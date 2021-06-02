@@ -8,6 +8,8 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
   allData: any;
+  totalRecords:number;
+  page:number = 1;
 
   constructor(private _home:HomeService) { }
 
@@ -17,7 +19,7 @@ export class HomeComponent implements OnInit {
   getAllData(){
      this._home.getAll().subscribe(data=>{
       this.allData = data
-      console.log(this.allData)
+    
      })
   }
 }
