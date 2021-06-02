@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   getAllData(){
      this._home.getAll().subscribe(data=>{
       this.allData = data
-    
+    console.log(this.allData)
      })
   }
 }
